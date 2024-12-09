@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    line-height: 1.5;
+}
+
+.head{
+    padding: 7px 7px;   
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("../fonts/Roboto-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: Roboto-Medium;
+    src: url("../fonts/Roboto-Medium.ttf");
+  }
+  
+  @font-face {
+    font-family: Roboto-Light;
+    src: url("../fonts/Roboto-Light.ttf");
+  }
+
+  .firstcontent{
+    > h1 {
+        font-family: Roboto-Light;
+        font-size: 55px;
+        font-weight: 400;
+        margin: 20px 0;
+    }
+    > p {
+        font-family: Roboto-Light;
+        font-size: 22px;
+        width: 60%;
+        margin-bottom: 50px;
+    }
+  }
+
+  .contentparent{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+
+  .content{
+   font-family: Roboto-Light;
+   position: relative;
+   flex-basis: 45%;
+  
+   i{
+    color: skyblue;
+    position: absolute;
+    margin-top: 5px;
+   }
+
+   h2{
+    margin-left: 40px;
+   }
+
+   p{
+    margin-left: 40px;
+    margin-bottom: 20px;
+   }
+  }
+  
+  @media all and (min-width: 576px) {
+    .content{
+      flex-basis: 30%;
+  }
+  }
+  
+  @media all and (min-width: 1200px) {
+    .content{
+      flex-basis: 45%;
+    }
+  }
+  
+  @media all and (max-width: 576px) {
+    .content{
+      flex-basis: 100%;
+      margin-bottom: 5px ;
+      .head{
+        font-size: 15px;
+      }
+    }
+  }
